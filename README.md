@@ -31,11 +31,7 @@ This web application enables users to **import and export data** between **Click
 
 ---
 
-## 📁 Project Structure
-```text 
-clickhouse-data-manager/ ├── src/ │ └── servlets/ │ ├── FileToClickHouseServlet.java │ ├── ClickHouseToFileServlet.java │ ├── ListClickHouseTablesServlet.java │ ├── LoadClickHouseColumnsServlet.java │ └── PreviewServlet.java ├── web/ │ ├── index.jsp │ ├── filetoclickhouse.jsp │ ├── clickhousetofile.jsp │ └── manage_data.jsp ├── resources/ │ └── sample_data.csv └── README.md # Project documentation
-```
----
+
 
 ## 🚀 How to Run Locally
 
