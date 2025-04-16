@@ -32,11 +32,9 @@ This web application enables users to **import and export data** between **Click
 ---
 
 ## 📁 Project Structure
-
-clickhouse-data-manager/ │ ├── src/ │ ├── servlets/ │ │ ├── FileToClickHouseServlet.java │ │ ├── ClickHouseToFileServlet.java │ │ ├── ListClickHouseTablesServlet.java │ │ ├── LoadClickHouseColumnsServlet.java │ │ └── PreviewServlet.java │ ├── web/ │ ├── index.jsp │ ├── filetoclickhouse.jsp │ ├── clickhousetofile.jsp │ └── manage_data.jsp │ ├── resources/ │ └── sample_data.csv │ ├── prompt.txt # Full list of AI prompts used └── README.md # Project documentation
-
-
-
+```text 
+clickhouse-data-manager/ ├── src/ │ └── servlets/ │ ├── FileToClickHouseServlet.java │ ├── ClickHouseToFileServlet.java │ ├── ListClickHouseTablesServlet.java │ ├── LoadClickHouseColumnsServlet.java │ └── PreviewServlet.java ├── web/ │ ├── index.jsp │ ├── filetoclickhouse.jsp │ ├── clickhousetofile.jsp │ └── manage_data.jsp ├── resources/ │ └── sample_data.csv └── README.md # Project documentation
+```
 ---
 
 ## 🚀 How to Run Locally
@@ -57,18 +55,23 @@ cd clickhouse-data-manager
 ---
 
 ## 🧠 Application Workflow
-### Step-by-Step UI Flow:
--Select Data Source
--Choose between "ClickHouse Table" or "Flat File"
--Load tables dynamically from ClickHouse via list-clickhouse-tables
--Select Columns
--Fetch columns for the selected table
--Display as checkbox list
--Preview Data
--Preview selected columns via PreviewServlet
--Ingest/Export
--Start ingestion or export process
--View live status and record count
+### 📋 Step-by-Step UI Flow
+
+- **Select Data Source**
+  - Choose between **ClickHouse Table** or **Flat File**
+  - Load tables dynamically from ClickHouse via `list-clickhouse-tables`
+
+- **Select Columns**
+  - Fetch columns for the selected table
+  - Display columns as a checkbox list
+
+- **Preview Data**
+  - Preview selected columns via `PreviewServlet`
+
+- **Ingest / Export**
+  - Start ingestion or export process
+  - View live status and record count
+
 
 --- 
 
