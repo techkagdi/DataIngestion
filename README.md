@@ -50,33 +50,24 @@ cd clickhouse-data-manager
 ---
 
 ### 3. Configure JDBC Connection
-Ensure the servlet uses the correct JDBC URL:
+## Ensure the servlet uses the correct JDBC URL:
 
-jdbc:clickhouse://localhost:8123/default
+-jdbc:clickhouse://localhost:8123/default
+
 ---
 
 ## 🧠 Application Workflow
 ### Step-by-Step UI Flow:
-- Select Data Source
-
+-Select Data Source
 -Choose between "ClickHouse Table" or "Flat File"
-
 -Load tables dynamically from ClickHouse via list-clickhouse-tables
-
 -Select Columns
-
 -Fetch columns for the selected table
-
 -Display as checkbox list
-
 -Preview Data
-
 -Preview selected columns via PreviewServlet
-
 -Ingest/Export
-
 -Start ingestion or export process
-
 -View live status and record count
 
 --- 
